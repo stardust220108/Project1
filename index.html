@@ -852,7 +852,7 @@ animateParticles();
       const amount = document.getElementById('donationAmount').value;
       const method = document.getElementById('paymentMethod').value;
       if(name && email && amount > 0) {
-        alert(\`🙏 Thank you, \${name}! Your generous donation of $\${amount} via \${method} is appreciated.\`);
+        alert(`🙏 Thank you, ${name}! Your generous donation of $${amount} via ${method} is appreciated.`);
         document.getElementById('donationForm').reset();
       } else {
         alert('⚠️ Please fill in all required fields correctly.');
@@ -864,7 +864,7 @@ animateParticles();
       const email = document.getElementById('contactEmail').value.trim();
       const msg = document.getElementById('contactMessage').value.trim();
       if (name && email && msg) {
-        alert(\`📩 Thanks \${name}! We'll get back to you soon.\`);
+        alert("📩 Thanks " + name + "! We'll get back to you soon.");
         document.getElementById('contactName').value = '';
         document.getElementById('contactEmail').value = '';
         document.getElementById('contactMessage').value = '';
